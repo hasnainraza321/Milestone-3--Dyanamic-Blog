@@ -8,7 +8,7 @@ export default function Navbar() {
     useEffect(() => {
         const updateDateTime = () => {
             const now = new Date();
-            const options = {
+            const options: Intl.DateTimeFormatOptions = {
                 weekday: "long",
                 year: "numeric",
                 month: "long",
@@ -18,7 +18,7 @@ export default function Navbar() {
                 second: "2-digit",
                 hour12: false,
             };
-            setCurrentDateTime(now.toLocaleString("en-US",options));
+            setCurrentDateTime(now.toLocaleString("en-US", options));
         };
 
         updateDateTime(); // Initialize the clock immediately
