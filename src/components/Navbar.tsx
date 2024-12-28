@@ -55,7 +55,7 @@ export default function Navbar() {
                         Blog
                     </Link>
                     <Link
-                        href="#contact"
+                        href="#Contact"
                         className="mr-5 hover:text-red-700 transition-colors duration-300 transform hover:scale-105"
                     >
                         Contact
